@@ -1,0 +1,33 @@
+```
+# WordPress plugin specific
+asset-control/build/
+asset-control/dist/
+asset-control/node_modules/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+```
