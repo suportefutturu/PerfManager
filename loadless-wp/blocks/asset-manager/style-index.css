@@ -1,0 +1,67 @@
+/**
+ * Frontend styles for LoadLess WP Asset Manager block
+ *
+ * @package LoadLessWP
+ * @since 1.0.0
+ */
+
+.loadless-wp-block,
+.loadless-wp-shortcode {
+    background: #f5f5f5;
+    border-left: 4px solid #2271b1;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.loadless-wp-block h3,
+.loadless-wp-shortcode h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1d2327;
+    font-size: 18px;
+}
+
+.loadless-wp-section {
+    margin-bottom: 15px;
+}
+
+.loadless-wp-section strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #1d2327;
+}
+
+.loadless-wp-section ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.loadless-wp-section li {
+    margin-bottom: 4px;
+    color: #50575e;
+    font-size: 14px;
+}
+
+.loadless-wp-more {
+    font-style: italic;
+    color: #646970;
+}
+
+.loadless-wp-link {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.loadless-wp-link a {
+    color: #2271b1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.loadless-wp-link a:hover {
+    color: #135e96;
+    text-decoration: underline;
+}

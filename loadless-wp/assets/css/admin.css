@@ -1,0 +1,202 @@
+/**
+ * Admin styles for LoadLess WP
+ *
+ * @package LoadLessWP
+ * @since 1.0.0
+ */
+
+/* Manager page container */
+#loadless-wp-manager-root {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Asset list table */
+.loadless-wp-assets-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.loadless-wp-assets-table th,
+.loadless-wp-assets-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.loadless-wp-assets-table th {
+    background: #f6f7f7;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.loadless-wp-assets-table tr:hover {
+    background: #f6f7f7;
+}
+
+/* Toggle switch */
+.loadless-wp-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.loadless-wp-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.loadless-wp-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.loadless-wp-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.loadless-wp-toggle input:checked + .loadless-wp-slider {
+    background-color: #2271b1;
+}
+
+.loadless-wp-toggle input:checked + .loadless-wp-slider:before {
+    transform: translateX(26px);
+}
+
+/* Asset type badges */
+.loadless-wp-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.loadless-wp-badge-script {
+    background: #e5f5fa;
+    color: #0073aa;
+}
+
+.loadless-wp-badge-style {
+    background: #f0f6fc;
+    color: #2271b1;
+}
+
+/* Search and filter controls */
+.loadless-wp-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.loadless-wp-search {
+    flex: 1;
+    min-width: 250px;
+}
+
+.loadless-wp-search input {
+    width: 100%;
+    max-width: 400px;
+}
+
+.loadless-wp-filter select {
+    min-width: 150px;
+}
+
+/* Pagination */
+.loadless-wp-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.loadless-wp-pagination button {
+    min-width: 40px;
+}
+
+/* Loading state */
+.loadless-wp-loading {
+    text-align: center;
+    padding: 40px;
+    color: #646970;
+}
+
+.loadless-wp-loading .spinner {
+    display: inline-block;
+    float: none;
+    margin: 0 10px 0 0;
+}
+
+/* Error messages */
+.loadless-wp-error {
+    background: #fcf0f1;
+    border-left: 4px solid #d63638;
+    padding: 12px 16px;
+    margin: 20px 0;
+}
+
+/* Success messages */
+.loadless-wp-success {
+    background: #edfaef;
+    border-left: 4px solid #00a32a;
+    padding: 12px 16px;
+    margin: 20px 0;
+}
+
+/* Page selector */
+.loadless-wp-page-selector {
+    margin-bottom: 20px;
+}
+
+.loadless-wp-page-selector label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.loadless-wp-page-selector select {
+    min-width: 300px;
+    max-width: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .loadless-wp-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .loadless-wp-search input {
+        max-width: 100%;
+    }
+
+    .loadless-wp-assets-table th,
+    .loadless-wp-assets-table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
