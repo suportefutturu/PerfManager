@@ -1,0 +1,30 @@
+```
+# Dependencies
+vendor/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests
+.phpunit.result.cache
+
+# WordPress specific
+wp-content/plugins/*/vendor/
+*.sql
+```
