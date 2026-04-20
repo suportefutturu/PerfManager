@@ -1,0 +1,24 @@
+/**
+ * Editor styles for LoadLess WP Asset Manager block
+ *
+ * @package LoadLessWP
+ * @since 1.0.0
+ */
+
+.loadless-wp-block-editor {
+    padding: 20px;
+    border: 2px dashed #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.loadless-wp-block-editor h3 {
+    margin-top: 0;
+    color: #2271b1;
+}
+
+.loadless-wp-preview-note {
+    font-style: italic;
+    color: #666;
+    font-size: 13px;
+}
